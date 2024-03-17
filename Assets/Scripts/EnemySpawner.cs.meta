@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 765b28f97f8b1094bb490189e7e5352a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _gameObjectPrefab: {instanceID: 0}
+  - _mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  - _material: {fileID: 2100000, guid: fd28217055f13cc478275ef7ca6d30d6, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -96,5 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 765b28f97f8b1094bb490189e7e5352a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameObjectPrefab: {fileID: 7941244424919939716, guid: 51789ddb725fd5341b1ed25439e3e396, type: 3}
   _delay: 2
+  _mesh: {fileID: 0}
+  _material: {fileID: 0}
+  _enemy: {fileID: -9127737585177978597, guid: 51789ddb725fd5341b1ed25439e3e396, type: 3}

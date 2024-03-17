@@ -267,6 +267,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _delay
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: fd28217055f13cc478275ef7ca6d30d6, type: 2}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _gameObjectPrefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6741357695941252291, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -418,8 +434,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
       propertyPath: _delay
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: fd28217055f13cc478275ef7ca6d30d6, type: 2}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _gameObjectPrefab
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6741357695941252291, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
       propertyPath: m_RootOrder
@@ -559,6 +587,22 @@ PrefabInstance:
     - target: {fileID: 883787436927880947, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
       propertyPath: m_Name
       value: Spawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _material
+      value: 
+      objectReference: {fileID: 2100000, guid: fd28217055f13cc478275ef7ca6d30d6, type: 2}
+    - target: {fileID: 6519750872910141000, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
+      propertyPath: _gameObjectPrefab
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6741357695941252291, guid: 09aaac2aa67b5e24a984d1a6f458850f, type: 3}
       propertyPath: m_RootOrder

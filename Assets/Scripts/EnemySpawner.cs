@@ -1,12 +1,11 @@
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _gameObjectPrefab;
     [SerializeField] private float _delay;
+    [SerializeField] private Enemy _enemy;
 
     private float _triggerTime;
-    private float _maxAngle = 360;
     private Bounds _bounds;
 
     private void Start()
@@ -19,7 +18,12 @@ public class Spawner : MonoBehaviour
     {
         if (Time.time >= _triggerTime)
         {
-            Instantiate(_gameObjectPrefab, GetSpawnPoint(), CalculateQuaternion());
+            Enemy enemy = _enemy;
+            Vector3 direction = GetMoveDirection().normalized;
+
+            enemy = Instantiate(enemy, GetSpawnPoint(), Quaternion.LookRotation(direction));
+            enemy.SetMoveDirection(direction);
+
             _triggerTime = Time.time + _delay;
         }
     }
@@ -45,11 +49,11 @@ public class Spawner : MonoBehaviour
         return spawnPoint;
     }
 
-    private Quaternion CalculateQuaternion()
+    private Vector3 GetMoveDirection()
     {
-        float angle = Random.Range(0, _maxAngle);
-        Quaternion quaternion = Quaternion.Euler(0, angle, 0);
+        float x = Random.Range(-1f, 1f);
+        float z = Random.Range(-1f, 1f);
 
-        return quaternion;
+        return new(x, 0, z);
     }
 }
