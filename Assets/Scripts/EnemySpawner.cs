@@ -4,6 +4,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private float _delay;
     [SerializeField] private Enemy _enemy;
+    [SerializeField] private Transform _target;
 
     private float _triggerTime;
     private Bounds _bounds;
@@ -19,10 +20,9 @@ public class EnemySpawner : MonoBehaviour
         if (Time.time >= _triggerTime)
         {
             Enemy enemy = _enemy;
-            Vector3 direction = GetMoveDirection().normalized;
 
-            enemy = Instantiate(enemy, GetSpawnPoint(), Quaternion.LookRotation(direction));
-            enemy.SetMoveDirection(direction);
+            enemy = Instantiate(enemy, GetSpawnPoint(), Quaternion.identity);
+            enemy.SetTarget(_target);
 
             _triggerTime = Time.time + _delay;
         }
@@ -47,13 +47,5 @@ public class EnemySpawner : MonoBehaviour
         spawnPoint += transform.position;
 
         return spawnPoint;
-    }
-
-    private Vector3 GetMoveDirection()
-    {
-        float x = Random.Range(-1f, 1f);
-        float z = Random.Range(-1f, 1f);
-
-        return new(x, 0, z);
     }
 }
